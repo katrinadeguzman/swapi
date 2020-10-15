@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="9cg-aB-hpF" customClass="DetailCell" customModule="Swapi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9cg-aB-hpF" id="DZa-1g-U2r">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-6E-w40">
+                        <rect key="frame" x="36" y="12" width="272" height="20"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-RT-5QG">
+                        <rect key="frame" x="150" y="12" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4jW-6E-w40" firstAttribute="leading" secondItem="DZa-1g-U2r" secondAttribute="leading" constant="36" id="cVb-lN-MIt"/>
+                    <constraint firstItem="8Ir-RT-5QG" firstAttribute="centerX" secondItem="DZa-1g-U2r" secondAttribute="centerX" id="ccC-1C-pga"/>
+                    <constraint firstAttribute="bottom" secondItem="4jW-6E-w40" secondAttribute="bottom" constant="12" id="fKB-db-xGR"/>
+                    <constraint firstItem="8Ir-RT-5QG" firstAttribute="centerY" secondItem="DZa-1g-U2r" secondAttribute="centerY" id="huE-eM-UmT"/>
+                    <constraint firstItem="4jW-6E-w40" firstAttribute="top" secondItem="DZa-1g-U2r" secondAttribute="top" constant="12" id="k3T-pp-lTX"/>
+                    <constraint firstAttribute="trailing" secondItem="4jW-6E-w40" secondAttribute="trailing" constant="12" id="ok0-aR-Vok"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="6Tu-Ci-NJ7"/>
+            <connections>
+                <outlet property="label" destination="4jW-6E-w40" id="axh-jG-1lY"/>
+                <outlet property="loadingIndicator" destination="8Ir-RT-5QG" id="OJu-cf-vFa"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>
